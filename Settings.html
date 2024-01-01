@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastavení</title>
+
+    <link rel="stylesheet" href="CSS/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+
+    <script defer src="scripts/game.js"></script>
+    <script defer src="scripts/forms.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <header>
+      <nav id="navbar">
+          <div class="name">Nastavení</div>
+          <ul>
+            <li>
+              <a href="instructions.html">Instrukce</a>
+            </li>
+            <li>
+              <a href="Questions.html">Otázky</a>
+            </li>
+            <li>
+              <a id="Settings" href="Settings.html">Nastavení</a>
+            </li>
+            <li>
+              <a href="AZ-kviz.html">AZ-kviz</a>
+            </li>
+          </ul>
+        </nav>
+  </header>
+  <div class="title">
+    <h1>Formulář pro nastavení hry</h1>
+  </div>
+  <main>
+    <form id="settingForm">
+      <label for="fileInput">Vyberte textový soubor s otázkami</label>
+      <div id="fileInputContainer">
+        <input type="file" id="fileInput" accept=".txt">
+      </div>
+      
+
+      <label id="nameLabel" for="name1">Zadejte jméno prvního hráče</label>
+      <input id="name1" type="text" name="userName" value="Hráč 1">
+
+      <label for="player1Color">Vyberte barvu prvního hráče</label>
+      <select id="player1Color" class="color1" name="colorForP1">
+        <option class="color1" value="color1" selected>Modrá</option>
+        <option class="color2" value="color2">Červrná</option>
+        <option class="color3" value="color3">Fialová</option>
+        <option class="color4" value="color4">Žlutá</option>
+      </select>
+      
+      <label id="nameLabel2" for="name2">Zadejte jméno druhého hráče</label>
+      <input id="name2" type="text" name="userName" value="Hráč 2">
+
+      <label for="player2Color">Vyberte barvu druhého hráče</label>
+      <select id="player2Color" class="color2" name="colorForP2">
+        <option class="color2" value="color2" selected>Červrná</option>
+        <option class="color1" value="color1">Modrá</option>
+        <option class="color3" value="color3">Fialová</option>
+        <option class="color4" value="color4">Žlutá</option>
+      </select>
+
+      <label id="timerLabel" for="timer">Nastavte počet sekund na odpověď</label>
+      <input id="timer" type="number" name="userName" value="20">
+        
+      <button id="submit" type="submit">Uložit nastavení</button>
+    </form>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      handleDataFormSettings('#settingForm', 'AZ-kviz.html');
+      });
+    </script>
+
+  </main>
+</body>
+<footer>
+  <p>Created by Tomáš Urban</p>
+</footer>
+</html>

@@ -1,0 +1,223 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--main-blue);
+}
+
+.title{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 90px;
+}
+
+main {
+  margin-top: 30px;
+  display: flex;
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  margin: 0;
+  background-color: var(--main-red);
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  
+  z-index: 100;
+  max-height: 60px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  box-sizing: border-box; 
+  display: flex;
+  font-weight: bold;
+}
+
+#navbar li:hover{
+  background-color: var(--main-blue);
+}
+
+
+#navbar a {
+  /*border: solid black;*/
+  box-sizing: border-box;
+  color: var(--main-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+}
+
+nav a, .name {
+  
+  color: var(--main-white);
+  font-size: 25px;
+}
+
+.name {
+  margin-right: auto;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  color: white;
+}
+
+main {
+  border-radius: 3px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  #title, #description {
+    text-align: center;
+  }
+  
+  #title {
+    margin-top: 50px;
+  }
+  
+  #description {
+    margin-bottom: 30px;
+  }
+  
+  form {
+    border-radius: 3px; 
+    background-color: #303841;
+    width: 600px;
+    padding: 30px 50px 20px 50px;
+    font-size: 20px; 
+    margin-bottom: 50px;
+  }
+  
+  input, select, button, textarea {
+    border-radius: 3px;
+    display: block;
+    width: 600px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+  
+  .radio, .checkbox {
+    display: inline;
+    align-self: left;
+    margin: 0;
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+    margin-top: -1px;
+    vertical-align: middle;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  
+  textarea {
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #37AF65;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: none;
+  }
+    
+  #radio {
+    display: inline;
+  }
+  
+  #small-font {
+    font-size: 14px;
+  }
+  
+  .margined-label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .spaceing {
+    margin-top: 50px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--main-red);
+    max-height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color: var(--main-white)
+  }
+
+.color1 {
+  background-color: blue;
+  font-weight: bold;
+}
+
+.color2 {
+  background-color: red;
+  font-weight: bold;
+}
+
+.color3 {
+  background-color: purple;
+  font-weight: bold;
+}
+
+.color4 {
+  background-color: yellow;
+  font-weight: bold;
+}

@@ -1,0 +1,269 @@
+/*PYRAMD AND HEXAGONS*/
+:root {
+  --hexagon-size: 80px; /* Velikost šestiúhelníku */
+  /*--main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;*/
+}
+
+body {
+  overflow: hidden;
+  
+}
+
+.pyramid {
+  margin-top: 30px;
+  padding-top: 30px;
+  /*border: solid;*/
+  width: 600px;
+  height: 530px;
+  background-color: 45567d;
+}
+
+.hexagonRow {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: -18px;
+}
+  
+.hexagonContainer {
+  width: var(--hexagon-size);
+  height: calc(var(--hexagon-size) * 1.1547); 
+  position: relative;
+}
+
+.hexagon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: grey;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.bigHexagonContainer {
+  /*border: solid;*/
+  opacity: 0;
+  z-index: -10;
+  top: -547px;
+  left: 5px;
+  width: calc(var(--hexagon-size) * 6);
+  height: calc(var(--hexagon-size) * 6 * 1.1547); 
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#bigHexagon {
+  /*background-color: grey;*/
+  background-color: green;
+}
+
+.playerHexagonContainer {
+  display: block;
+  width: calc(var(--hexagon-size) * 0.5);
+  height: calc(var(--hexagon-size) * 0.5 * 1.1547); 
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p1Hexagon {
+  background-color: blue;
+} 
+.p2Hexagon {
+  background-color: red;
+} 
+
+.colorHexagonContainer {
+  display: block;
+  width: calc(var(--hexagon-size) * 0.5);
+  height: calc(var(--hexagon-size) * 0.5 * 1.1547); 
+  position: relative;
+  top: 45%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+.colorHexagon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#colorBlackHexagon {
+  background-color: black;
+}
+
+/*#color_p1_hexagon {
+  background-color: blue;
+}
+
+#color_p2_hexagon {
+  background-color: red;
+}*/
+
+.colorBlackHexagon {
+  background-color: black;
+}
+
+.colorP1Hexagon {
+  background-color: blue;
+}
+
+.colorP2Hexagon {
+  background-color: red;
+}
+
+/*PLAYERS*/
+.player1, .player2 {
+  display: flex;
+  justify-content: center;
+  /*border: solid;*/
+  width: 200px;
+  height: 100px;
+}
+
+.player1 {
+  margin-left: auto;
+}
+
+.player2 {
+  margin-right: auto;
+}
+
+.player1, .player1Name  {
+  padding-top: 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.player2, .player2Name  {
+  padding-top: 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* QUESTION */
+.questionNumber {
+  /*border: solid;*/
+  border-radius: 5px;
+  width: 220px;
+  height: 30px;
+  color: black;
+
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 160px;
+  border: solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.question p {
+  font-size: larger;
+  color: black;
+}
+
+#timer {
+  /*border: solid;
+  border-radius: 5px;*/
+  width: 150px;
+  height: 55px;
+
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#timer p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#timer button {
+  width: 20px;
+  height: 20px;
+  color: #333; /* Barva textu tlačítek */
+  background-color: var(--main-white);
+  border-radius: 2px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.hexagonsColloring {
+  display: flex;
+  /*border: solid;*/
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color1 {
+  background-color: blue;
+  font-weight: bold;
+}
+
+.color2 {
+  background-color: red;
+  font-weight: bold;
+}
+
+.color3 {
+  background-color: purple;
+  font-weight: bold;
+}
+
+.color4 {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}

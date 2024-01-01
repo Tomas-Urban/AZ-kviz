@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrukce</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="CSS/instructions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+
+    <script defer src="scripts/game.js"></script>
+    <script defer src="scripts/forms.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="name">Instrukce</div>
+            <ul>
+                <li>
+                    <a href="instructions.html">Instrukce</a>
+                </li>
+                <li>
+                    <a href="Questions.html">Otázky</a>
+                </li>
+                <li>
+                    <a href="Settings.html">Nastavení</a>
+                </li>
+                <li>
+                    <a id="AZ-kviz" href="AZ-kviz.html">AZ-kviz</a>
+                </li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <div id="instructions">
+            <h1>Jak používat aplikaci AZ-kvíz</h1>
+	        <div class="paragaphs">
+	            <p>Aplikace byla vytvořena pro prohlížeč <b>Google Chrome</b>. 
+	                Správně funguje též v prohlížeči <b>Microsoft Edge</b>, <b>Opera</b>,
+	                <b>Brave</b> a <b>Vivaldi</b>. 
+	                Například v prohlížeči Mozila Firefox nefunguje správně ukládání dat 
+	                z nastavení do paměti prohlížeče.
+	            </p>
+	            <p>Prohlížeč <b>Internet Explorer</b> aplikaci správně ani nezobrazuje.</p>
+	        </div>
+	
+	        <h2>Otázky</h2>
+	        <div class="paragaphs">
+	            <p>Rozkliknutím záložky <a href="Questions.html"><b>Otázky</b></a> 
+	                se dostanete k formuláři pro zadání herních otázek. Pro správné načítání
+	                otázek ve hře je potřeba zadat všechny otázky.</p>
+	                <p>Po zadání všech otázek ve formuláři stáhnete textový soubor <b>'questions'</b> s herními 
+                        otázkami kliknutím na tlačítko <b>'Stáhnout otázky'</b>. V závislosti na použitém 
+                        prohlížeči si můžete zvolit umístění stahovaného souboru, případně soubor naleznete ve 
+                        složce <b>'Stažené soubory'</b> či <b>'Downloads'</b>. Soubor můžete podle potřeby 
+                        libovolně přejmenovat, či přesunout.
+	            </p> 
+	            <p>Aplikace obsahuje složku <b>'Questions'</b>, ve které uživatel může své vytvořené soubory s 
+                    otázkami přehledně třídit a snadno k nim přistupovat.
+	            </p>
+	        </div>
+
+            <h2>Nastavení</h2>
+            <div class="paragaphs">
+                <p>Rozkliknutím záložky <a href="Settings.html"><b>Nastavení</b></a> se dostanete k formuláři 
+                    pro nastavení hry.
+                    </p>
+                    <p>Nejprve klikněte na tlačítko <b>'Vybrat soubor'</b>.
+                    Otevře se průzkumník. V tomto průzkumníku jděte do složky <b>'Questions'</b> a vyberte váš 
+                    soubor s otázkami, který chcete v aktuální hře používat. Název souboru se po vybrání vypíše 
+                    vedle tlačítka.
+                    </p>
+                    <p>
+                    Dále můžete zadat jména hráčů. Jejich přednastavená hodnota je <b>'Hráč 1'</b> a <b>'Hráč 2'</b>.
+                    Hráčům můžete přiřadit i jejich herní barvu. <b>'Hráč 1'</b> má přednastavenou modrou barvu a <b>'Hráč 2'</b> 
+                    červenou barvu. Výběr je naprogramován tak, aby hráči nemohli vybrat stejnou barvu. Chceteli, 
+                    <b>'Hráči 2'</b> nastavit modrou barvu, nejprve musít <b>'Hráči 1'</b> vybrat barvu jinou.  
+                    </p>
+                    <p>Nakonec vyberte počet sekund, který se nastaví do časovače, kterým můžete hráčům odpočítávat
+                    čas na odpověď. Přednastavená hodnota je 20 sekund.
+                    </p>
+                    <p>Pro uložení údajů do paměti prohlížeče klikněte na tlačítko <b>'Uložit nastavení'</b></p>
+            </div>
+
+            <h2>AZ-kvíz</h2>
+            <div class="paragaphs">
+                <p> Rozkliknutím záložky <a href="AZ-kviz.html"><b>AZ-kvíz</b></a> se dostanete na stránku s hrou.
+                    Pokud máte vše správně nastaveno, vedle pyramidy s otázkami se zobrazí vaše zvolená jména 
+                    hráčů a po kliknutí na hexagon s číslem se zobrazí zelný hexagon s příslušnou otázkou. 
+                    Na zeleném hexagonu najdete časovač, nastavený na počet sekund, který byl zadán v záložce
+                    <a href="Settings.html"><b>Nastavení</b></a>.
+                </p>
+                <p>Časovač lze ovládat třemi tlačítky: <b>'play'</b> ( <i class="fa fa-play"></i> ), 
+                    <b>'pause'</b> ( <i class="fa fa-pause"></i> ) a <b>'reset'</b> ( <i class="fa fa-stop"></i> ). 
+                    Časovač lze též spouštět a zastavovat stisknutím klávesy <b>'Mezerník'</b>.
+                </p>
+                <p>Kliknutím na tlačítko <b>'play'</b> se spustí odpočet, který se zastaví po dosažení hodnoty 
+                    <b>'0'</b>. Tlačítko play nelze znovu vybrat, dokud není vybráno některé ze zbývajících 
+                    tlačítek.
+                </p>
+                <p>
+                    Kliknutím na tlačítko <b>'pause'</b> se odpočet zastaví. Podobně jako tlačítko <b>'play'</b> 
+                    lze tlačítko <b>'pasue'</b> znovu vybrat po výběru některého ze z ostatních tlačítek.
+                </p>
+                <p>Tlačítko <b>'reset'</b> obnoví časovač do původního stavu a lze jej vybrat kdykoliv.
+                </p>
+                <p>Na zelenem hexagonu s otázkou nalezneme ještě <b>modrý</b>, <b>černý</b> a <b>červený</b> 
+                    hexagon. Jedná se o tlačítka, kterými lze obarvit zvolený hexagon z pyramidy. 
+                </p>
+                <p>Pokud hexagon v pyramidě obarvíme na černo a znovu jej vybereme, zobrazí se příslušná
+                    náhradní otázka. V případě potřeby lze již obarvené hexagony v pyramidě znovu vybrat
+                    a přebarvit.
+                </p>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <p>Created by Tomáš Urban</p>
+    </footer>
+</body>

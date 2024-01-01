@@ -1,0 +1,95 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+main {
+    margin-top: 80px;
+    display: flex;
+}
+
+/* NAVIGATION */
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    margin: 0;
+    background-color: var(--main-red);
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    
+    z-index: 100;
+    max-height: 60px;
+}
+  
+#navbar ul {
+    display: flex;
+}
+  
+#navbar ul li {
+    /*border: solid green;*/
+    box-sizing: border-box; /* Přidáno pro zahrnutí padding ve výpočtu šířky a výšky */
+    display: flex;
+    /*padding: 14px;*/
+    font-weight: bold;
+}
+  
+#navbar li:hover{
+    background-color: var(--main-blue);
+}
+
+
+#navbar a {
+    /*border: solid black;*/
+    box-sizing: border-box;
+    color: var(--main-white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+nav a, .name {
+    
+    color: var(--main-white);
+    font-size: 25px;
+}
+
+.name {
+    margin-right: auto;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--main-red);
+    max-height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color: var(--main-white)
+  }
