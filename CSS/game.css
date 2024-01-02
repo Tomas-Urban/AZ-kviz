@@ -1,10 +1,6 @@
 /*PYRAMD AND HEXAGONS*/
 :root {
   --hexagon-size: 80px; /* Velikost šestiúhelníku */
-  /*--main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;*/
 }
 
 body {
@@ -13,9 +9,9 @@ body {
 }
 
 .pyramid {
+  /*border: solid;*/
   margin-top: 30px;
   padding-top: 30px;
-  /*border: solid;*/
   width: 600px;
   height: 530px;
   background-color: 45567d;
@@ -111,14 +107,6 @@ body {
   background-color: black;
 }
 
-/*#color_p1_hexagon {
-  background-color: blue;
-}
-
-#color_p2_hexagon {
-  background-color: red;
-}*/
-
 .colorBlackHexagon {
   background-color: black;
 }
@@ -202,7 +190,7 @@ body {
   height: 55px;
 
   position: absolute;
-  top: 82%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
   justify-content: space-between;
@@ -222,7 +210,7 @@ body {
   height: 20px;
   color: #333; /* Barva textu tlačítek */
   background-color: var(--main-white);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .buttons {
@@ -266,4 +254,78 @@ body {
   background-color: yellow;
   color: black;
   font-weight: bold;
+}
+
+@media (max-height: 800px) {
+  .pyramid {
+    margin-top: 30px;
+    padding-top: 30px;
+    width: calc(600px * 0.8);
+    height: calc(530px * 0.8);
+    background-color: 45567d;
+  }
+
+  .hexagonRow {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: calc(-18px * 0.8);
+  }
+
+  .hexagonContainer {
+    width: calc(var(--hexagon-size) * 0.8);
+    height: calc(var(--hexagon-size) * 0.8 * 1.1547); 
+  }
+
+  .hexagon span {
+    font-size: 25px;
+  }
+
+  .bigHexagonContainer {
+    opacity: 0;
+    z-index: -10;
+    top: calc(-547px * 0.8);
+    left: -6px;
+    width: calc(var(--hexagon-size) * 0.8 * 6);
+    height: calc(var(--hexagon-size)* 0.8 * 6 * 1.1547); 
+  }
+
+  .questionNumber {
+    /*border: solid;*/
+    width: calc(220px);
+    height: calc(30px * 0.8);
+    font-size: 14px;
+  }
+
+  .question {
+    width: calc(400px * 0.8);
+    height: calc(160px * 0.8);
+  }
+
+  .question p {
+    font-size: 15px;
+  }
+
+  .hexagonsColloring {
+    top: 70%;
+  }
+
+  #timer {
+    position: absolute;
+    top: 81%;
+    border-radius: 5px;
+    width: calc(150px * 0.8);
+    height: calc(60px * 0.8);
+    font-size: 25px;
+    color: black;
+  }
+
+  #timer button {
+    width: 18px;
+    height: 18px;
+    color: #333; /* Barva textu tlačítek */
+    background-color: var(--main-white);
+    border-radius: 3px;
+  }
 }
