@@ -65,12 +65,12 @@ hexagons.forEach(hexagon => {
 
                 // Uploading question
 
-                    questionText.textContent = questions[parseInt(hexagonNumberText) - 1];
-                
+                questionText.textContent = questions[parseInt(hexagonNumberText) - 1]; 
             }
                        
             // Turning the hexagon away
             rotateOut(hexagon)
+            hexagon.style.opacity = '0';
 
             // Display questionHexagon
             setTimeout(() => {
@@ -115,6 +115,7 @@ colorHexagons.forEach(colorHexagon => {
         setTimeout(() => {
             rotateIn(selectedHexagon)
             selectedHexagon.classList.remove('animate__flipOutY');
+            selectedHexagon.style.opacity = '1';
         }, 400)
 
         //hiding questionHexagon
@@ -127,5 +128,3 @@ colorHexagons.forEach(colorHexagon => {
         }, 1000);  
     });
 });
-
-
