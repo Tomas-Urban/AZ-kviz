@@ -54,7 +54,7 @@ body {
   opacity: 0;
   z-index: -10;
   top: -547px;
-  left: 5px;
+  left: 0px;
   width: calc(var(--hexagon-size) * 6);
   height: calc(var(--hexagon-size) * 6 * 1.1547); 
   position: relative;
